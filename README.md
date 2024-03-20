@@ -24,7 +24,7 @@ End the program.
 ## Program:
 ### Developed By   :RAGUNATH R
 ### Register Number:212222240081
-</br>
+
 
 ### 1. Smoothing Filters
 
@@ -49,9 +49,10 @@ plt.subplot(1,2,2)
 plt.imshow(image3)
 plt.title('Filtered')
 plt.axis('off')
-
 ```
+
 ii) Using Weighted Averaging Filter
+
 ```
 import cv2
 import numpy as np
@@ -63,9 +64,10 @@ kernel2 = np.array([[1,2,1],[2,4,2],[1,2,1]])/16
 image4 = cv2.filter2D(image2, -1, kernel2)
 plt.imshow(image4)
 plt.title('Weighted Averaging Filtered')
-
 ```
+
 iii) Using Gaussian Filter
+
 ```
 import cv2
 import numpy as np
@@ -77,13 +79,10 @@ gaussian_blur = cv2.GaussianBlur(src=image2, ksize=(11,11), sigmaX=0, sigmaY=0)
 plt.imshow(gaussian_blur)
 plt.title(' Gaussian Blurring Filtered')
 
-
-
-
-
 ```
 
 iv) Using Median Filter
+
 ```
 
 median=cv2.medianBlur(image2,13)
@@ -97,8 +96,6 @@ plt.imshow(median)
 plt.title("Median Blur")
 plt.axis("off")
 plt.show()
-
-
 ```
 
 ### 2. Sharpening Filters
@@ -117,12 +114,11 @@ plt.imshow(image3)
 plt.title("Laplacian Kernel")
 plt.axis("off")
 plt.show()
-
 ```
+
 ii) Using Laplacian Operator
+
 ```
-
-
 laplacian=cv2.Laplacian(image2,cv2.CV_64F)
 plt.figure(figsize=(9,9))
 plt.subplot(1,2,1)
@@ -134,35 +130,35 @@ plt.imshow(laplacian)
 plt.title("Laplacian Operator")
 plt.axis("off")
 plt.show()
-
 ```
 
 ## OUTPUT:
-### 1. Smoothing Filters
 
+### 1.Smoothing Filters
 
-i) Using Averaging Filter
-![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/01520a6b-31ef-4e73-be20-00704c48758e)
+i)Averaging filter
+![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/cce56f51-d15c-43a8-bf9b-4ff973ee8a27)
 
+ii)weighted average filter
+![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/e3372eb8-1be2-4660-ae93-cc5b362077ac)
 
-ii) Using Weighted Averaging Filter
-![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/434cf10b-3727-44d2-a27f-4a8856c80031)
+iii)Guassian blurring filter
+![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/7e2d5898-e08f-47b8-b840-e7a012740093)
 
-iii) Using Gaussian Filter
-
-![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/386222b2-9a5b-4e7a-acc3-8e217f2eceaf)
-
-
-iv) Using Median Filter
-![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/ac11a689-bbc3-433b-bd44-3cd90cccfa11)
+iv)Median blurring filter
+![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/50487471-948a-48ec-bce8-729d0bd8d779)
 
 
 
-### 2. Sharpening Filters
-</br>
+
+
+
+
+
+### 2.Sharpening Filters
 
 i) Using Laplacian Kernal
-![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/677794de-425d-49d5-ab62-d9d88acd6c92)
+![image](https://github.com/Ragu-123/Implementation-of-filter/assets/113915622/830e23e5-6807-4817-b82d-3eab7d43b765)
 
 
 ii) Using Laplacian Operator
